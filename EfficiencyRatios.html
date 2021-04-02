@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Financial Ratios</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <style>
+    body{
+     background-image: url("logo.svg");
+     height: 100vh;
+     background-repeat: no-repeat;
+    }
+      h1{
+        color: green;
+        text-align: center;
+        font-size: 85px;
+        font-family: "Garamond", serif;
+    }
+
+      h3{
+      color: green;
+      text-align: center;
+      font-size: 36px;
+      font-family: "Garamond", serif;
+      }
+      div.button{
+        align-items: center;
+        text-align: center;
+      }
+      div.col-3{
+        background-color: black;
+        text-align: center;
+      }
+      label{
+        color: green;
+        font-size: 24px;
+        font-family: "Garamond", serif;
+      }
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: transparent;
+        text-align: center;
+        align-items: center;
+      }
+      .btn-success{
+        background-color: green;
+      }
+      .btn-success:hover{
+        background-color: black;
+      }
+
+
+    </style>
+    </head>
+
+    <body>
+    <div class="container-fluid">
+      <h1 class="display-3">Efficiency Ratio Calculators</h1><br>
+    </div>
+
+    <div class="sticky">
+      <div class="container-fluid">
+        <a href="financialratios.html" class="btn btn-success"><i class="bi bi-house-door-fill" style= "font-size: 1rem; color: white;"></i>Home</a>
+        <a href="LiquidityRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Liquidity Ratios</a>
+        <a href="LeverageFinancialRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Leverage Financial Ratios</a>
+        <a href="EfficiencyRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Efficiency Ratios</a>
+        <a href="ProfitabilityRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Profitability Ratios</a>
+        <a href="MarketValueRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Market Value Ratios</a>
+      </div>
+    </div>
+    <br>
+
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-3">
+            <h3>Asset Turnover</h3><br>
+            <label for="inNetAsset">Net Sales:</label>
+              <input type = "number" class="form-control" id="inNetAsset">
+            <label for="inAvgAsset">Average Total Assets:</label>
+              <input type = "number" class="form-control" id="inAvgAsset"><br>
+              <div class="button">
+              <button type="submit" class="btn btn-success btn-md" button id="btnAssetTurnover">Calculate Asset Turnover Ratio:</button>
+                <br><h3>Ratio: <span id="outAssetTurnover"></span></h3>
+          </div>
+          </div>
+          <div class="col-3">
+            <h3>Inventory Turnover</h3><br>
+            <label for="inCostGoods">Cost of Goods Sold:</label>
+              <input type = "number" class="form-control" id="inCostGoods">
+            <label for="inAvgInventory">Average Inventory:</label>
+              <input type = "number" class="form-control" id="inAvgInventory"><br>
+              <div class="button">
+              <button type="submit" class="btn btn-success btn-md" button id="btnInventoryTurnover">Calculate Inventory Turnover Ratio:</button>
+                <br><h3>Ratio: <span id="outInventoryTurnover"></span></h3>
+          </div>
+          </div>
+          <div class="col-3">
+            <h3>Receivables Turnover</h3><br>
+            <label for="inNetCredit">Net Credit Sales:</label>
+              <input type = "number" class="form-control" id="inNetCredit">
+            <label for="inAvgAccounts">Average Accounts Receivable:</label>
+              <input type = "number" class="form-control" id="inAvgAccounts"><br>
+              <div class="button">
+              <button type="submit" class="btn btn-success btn-md" button id="btnReceivablesTurnover">Calculate Receivables Turnover Ratio:</button>
+                <br><h3>Ratio: <span id="outReceivablesTurnover"></span></h3>
+          </div>
+          </div>
+          <div class="col-3">
+            <h3>Days Sales In Inventory</h3><br>
+            <label for="inDaysInventory">Inventory Turnover Ratio:</label>
+              <input type = "number" class="form-control" id="inDaysInventory" ><br>
+              <div class="button">
+              <button type="submit" class="btn btn-success btn-md" button id="btnDaysSales">Calculate Days Sales In Inventory Ratio:</button>
+                <br><h3>Ratio: <span id="outDaysSales"></span></h3>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="Efficiency/AssetTurnoverRatio.js"></script>
+      <script src="Efficiency/InventoryTurnoverRatio.js"></script>
+      <script src="Efficiency/ReceivablesTurnoverRatio.js"></script>
+      <script src="Efficiency/DaysSalesInInventoryRatio.js"></script>
+      <script src="popper.min.js"></script>
+      <script src="jquery.color.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="jquery.min.js"></script>
+    </body>
+    </html>
