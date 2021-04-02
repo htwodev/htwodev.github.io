@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Financial Ratios</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <style>
+    body{
+     background-image: url("logo.svg");
+     height: 100vh;
+     background-repeat: no-repeat;
+    }
+    h1{
+      color: green;
+      text-align: center;
+      font-size: 85px;
+      font-family: "Garamond", serif;
+  }
+
+    h3{
+    color: green;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Garamond", serif;
+    }
+      div.button{
+        align-items: center;
+        text-align: center;
+      }
+      div.col-3{
+        background-color: black;
+        text-align: center;
+      }
+      label{
+        color: green;
+        font-size: 24px;
+        font-family: "Garamond", serif;
+      }
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: transparent;
+        text-align: center;
+        align-items: center;
+      }
+      .btn-success{
+        background-color: green;
+      }
+      .btn-success:hover{
+        background-color: black;
+      }
+
+
+    </style>
+    </head>
+
+    <body>
+    <div class="container-fluid">
+      <h1 class="display-3">Profitability Ratio Calculators</h1><br>
+    </div>
+
+    <div class="sticky">
+      <div class="container-fluid">
+        <a href="financialratios.html" class="btn btn-success"><i class="bi bi-house-door-fill" style= "font-size: 1rem; color: white;"></i>Home</a>
+        <a href="LiquidityRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Liquidity Ratios</a>
+        <a href="LeverageFinancialRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Leverage Financial Ratios</a>
+        <a href="EfficiencyRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Efficiency Ratios</a>
+        <a href="ProfitabilityRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Profitability Ratios</a>
+        <a href="MarketValueRatios.html" class="btn btn-success"><i style= "font-size: 1rem; color: white;"></i>Market Value Ratios</a>
+      </div>
+    </div>
+    <br>
+
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-3">
+            <h3>Gross Margin</h3><br>
+            <label for="inGrossProf">Gross Profit:</label>
+              <input type = "number" class="form-control" id="inGrossProf">
+            <label for="inNetSales">Net Sales:</label>
+              <input type = "number" class="form-control" id="inNetSales"><br>
+              <div class="button">
+              <button type="submit" class="btn btn-success btn-md" button id="btnGrossMargin">Calculate Gross Margin Ratio:</button>
+                <br><h3>Ratio: <span id="outGrossMargin"></span></h3>
+          </div>
+          </div>
+          <div class="col-3">
+            <h3>Operating Margin</h3><br>
+            <label for="inOperatingIncome">Operating Income:</label>
+              <input type = "number" class="form-control" id="inOperatingIncome">
+            <label for="inNetS">Net Sales:</label>
+              <input type = "number" class="form-control" id="inNetS"><br>
+              <div class="button">
+              <button type="submit" class="btn btn-success btn-md" button id="btnOperatingMargin">Calculate Operating Margin Ratio:</button>
+                <br><h3>Ratio: <span id="outOperatingMargin"></span></h3>
+          </div>
+          </div>
+          <div class="col-3">
+            <h3>Return On Assets</h3><br>
+            <label for="inNetIncome">Net Income:</label>
+              <input type = "number" class="form-control" id="inNetIncome">
+            <label for="inTotalAssets">Total Assets:</label>
+              <input type = "number" class="form-control" id="inTotalAssets"><br>
+              <div class="button">
+              <button type="submit" class="btn btn-success btn-md" button id="btnReturnOnAssets">Calculate Return On Assets Ratio:</button>
+                <br><h3>Ratio: <span id="outReturnOnAssets"></span></h3>
+          </div>
+          </div>
+          <div class="col-3">
+            <h3>Return On Equity</h3><br>
+            <label for="inNetIn">Net Income:</label>
+              <input type = "number" class="form-control" id="inNetIn">
+            <label for="inShareholderE">Shareholder's Equity:</label>
+              <input type = "number" class="form-control" id="inShareholderE"><br>
+              <div class="button">
+              <button type="submit" class="btn btn-success btn-md" button id="btnReturnOnEquity">Calculate Return On Equity Ratio:</button>
+                <br><h3>Ratio: <span id="outReturnOnEquity"></span></h3>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+          <script src="Profitability/GrossMargin.js"></script>
+          <script src="Profitability/OperatingMargin.js"></script>
+          <script src="Profitability/ReturnOnAssets.js"></script>
+          <script src="Profitability/ReturnOnEquity.js"></script>
+          <script src="popper.min.js"></script>
+          <script src="jquery.color.min.js"></script>
+          <script src="js/bootstrap.js"></script>
+          <script src="jquery.min.js"></script>
+        </body>
+        </html>
