@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+      div.col-md-6{
+        align-items: center;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-size: 24px;
+        border-radius: 10px;
+        border:#E0E4D9 solid;
+        border-width: thin;
+      }
+      h1{
+          text-align: center;
+          color:#E0E4D9;
+          font-family: 'EB Garamond', serif;
+          font-size: 100px;
+          background-color:#00689B;
+          border-radius: 10px;
+        }
+      .col-md-6:hover{
+          transform: scale(1.1);
+      }
+      div.col-6{
+      align-items: center;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color: #006b3cff;
+      font-size: 24px;
+      padding-left: 30px;
+      padding-top: 5px;
+      }
+
+      body{
+      background-color: #E0E4D9;
+      }
+
+      .btn-outline-black{
+        background-color: #006b3cff;
+        color: #E0E4D9;
+      }
+      .btn-outline-black:hover{
+        background-color: #00689B;
+        color: #E0E4D9;
+      }
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: transparent;
+        font-size: 12px;
+        text-align: center;
+        font-family: 'EB Garamond', serif;
+      }
+
+    </style>
+</head>
+<body>
+  <div class="sticky" style= background:#006b3cff>
+    <div class="container-fluid">
+  <a href="index.html" class="btn btn-outline-black btn-sm"><i class="bi bi-house-door-fill" style= "font-size: 1rem; color:#E0E4D9;"></i><span style="font-size:larger;"> Home</span></a>
+  <a href="about.html" class="btn btn-outline-black btn-sm"><i class="bi bi-info-square-fill" style= "font-size: 1rem; color:#E0E4D9;"></i><span style="font-size:larger;"> About</span></a>
+  <a href="skills.html" class="btn btn-outline-black btn-sm"><i class="bi bi-file-code-fill" style= "font-size: 1rem; color:#E0E4D9;"></i><span style="font-size:larger;"> Skills</span></a>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h1>Portfolio</h1>
+      </div>
+    </div>
+  </div>
+  <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"
+          style= background:#006b3cff>
+            <a href="financialentrance.html">
+              <img src="financialfools.jpg" class="img-fluid rounded mx-auto d-block" img width="90%" hspace="20" vspace="20"></a>
+            </div>
+            <br>
+        <div class="col-6">
+          <b>Financial Fools</b>
+          <br>This project centers around financial education.
+          <br>I used Bootstrap, CSS, and HTML to build the client facing website.
+          <br>Within the website I used JavaScript to build various financial related calculators to provide personal, investment, and corporate financial solutions.
+        </div>
+        </div>
+      </div>
+
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
