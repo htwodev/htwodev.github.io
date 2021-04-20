@@ -1,7 +1,8 @@
-//M = P[r(1+r)^n/(((1+r)^n)-1))]
+//M = P[r(1+r)^n/(((1+r)^n)-1))] + t
 //P = Oustanding loan amount
 //r= monthly interest Rate
 //m= total number of periods/months
+//t = monthly taxes
 function calculateMortgage(p, r, m, t){
 
   var pmt = (p * ((r * Math.pow((1 + r), m) / (Math.pow((1 + r), m) - 1)))) + t;
